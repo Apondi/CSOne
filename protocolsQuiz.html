@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSOne</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+<body>    
+<!-- Navbar -->
+<div class="navbar">
+    <div id="logo-container" class="navcont">
+    <a id="logo" href="index.php"><img alt="logo" src="images/logo.png"></a>
+    </div>
+    <div id="menu" class="navcont">
+        <a href="index.php" class="button"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+           <div class="dropdown">
+               <button class="dropbtn">Modules<i class="fa fa-caret-down" aria-hidden="true" style="padding:0px 5px 0px 5px;"></i></button>
+              <div class="dropdown-content">
+                <a href="networking.html" class="active-sublink">Introduction to Networking</a>
+                <a href="#">Software Engineering</a>
+                <a href="#">Programming 1</a>
+                <a href="#">Mathematics for Computing</a>
+              </div>
+            </div>
+    </div>
+</div>
+    
+<!-- Header -->
+<div id="breadcrumbNav">
+    <ul class="breadcrumb">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="networking.html">Module: Introduction to Networking</a></li>
+      <li>Quiz</li>
+    </ul>
+</div>
+    
+<!-- Content -->
+<div id="module-content">
+    <header>
+         <div class="quiz-header">
+             <h2><i class="fa fa-question-circle" aria-hidden="true"></i>Networking Protocols Quiz</h2>
+             <p>As you answer the questions below your results will be instantly displayed at the end of each question. This being a practice test there is no limit to the number of times you can take this quiz</p>
+         </div>
+    </header> 
+    <!-- Quiz Q&A -->
+    <div id="quiz-container">
+        <div id="questionNumber">1 out of 6</div>
+        <div class="protocol-questions">
+            <div class="question">Which protocol is used to automatically provide IP addresses to network computers?</div>
+            <form class="options">
+                <input id="rad1a" class="answers" type="radio" name="question1" value='a'><label for=rad1a>DHCP</label>
+                <input id="rad1b" class="answers" type="radio" name="question1" value='b'><label for=rad1b>DNS</label>
+                <input id="rad1c" class="answers" type="radio" name="question1" value='c'><label for=rad1c>ARP</label>
+                <input id="rad1d" class="answers" type="radio" name="question1" value='d'><label for=rad1d>IGMP</label>
+            </form>
+            <div class="result" id="result1"></div>
+        </div>
+        <div class="protocol-questions">
+            <div class="question">Which protocol is used to upload email messages to an email server?</div>
+            <form class="options">
+                <input id="rad2a" class="answers" type="radio" name="question2" value='a'><label for=rad2a>DNS</label>
+                <input id="rad2b" class="answers" type="radio" name="question2" value='b'><label for=rad2b>HTTP</label>
+                <input id="rad2c" class="answers" type="radio" name="question2" value='c'><label for=rad2c>SMTP</label>
+                <input id="rad2d" class="answers" type="radio" name="question2" value='d'><label for=rad2d>PAT</label>
+            </form>
+            <div class="result" id="result2"></div>
+        </div>
+        <div class="protocol-questions">
+            <div class="question">Which protocol is used to resolve domain names to IP addresses?</div>
+            <form class="options">
+                <input id="rad3a" class="answers" type="radio" name="question3" value='a'><label for=rad3a>TCP</label>
+                <input id="rad3b" class="answers" type="radio" name="question3" value='b'><label for=rad3b>DNS</label>
+                <input id="rad3c" class="answers" type="radio" name="question3" value='c'><label for=rad3c>DHCP</label>
+                <input id="rad3d" class="answers" type="radio" name="question3" value='d'><label for=rad3d>ARP</label>
+            </form>
+            <div class="result" id="result3"></div>
+        </div>
+        <div class="protocol-questions">
+            <div class="question"> What does the acronym SSL represent?</div>
+            <form class="options">
+                <input id="rad4a" class="answers" type="radio" name="question4" value='a'><label for=rad4a>System Service Layer</label>
+                <input id="rad4b" class="answers" type="radio" name="question4" value='b'><label for=rad4b>Secure Socket Layer</label>
+                <input id="rad4c" class="answers" type="radio" name="question4" value='c'><label for=rad4c>System Synchronization Link</label>
+                <input id="rad4d" class="answers" type="radio" name="question4" value='d'><label for=rad4d>Secure System Link</label>
+            </form>
+            <div class="result" id="result4"></div>
+        </div>
+        <div class="protocol-questions" >
+            <div class="question">Which protocol is commonly used to retrieve email from a mail server?</div>
+            <form class="options">
+                <input id="rad5a" class="answers" type="radio" name="question5" value='a'><label for=rad5a>FTP</label>
+                <input id="rad5b" class="answers" type="radio" name="question5" value='b'><label for=rad5b>IMAP</label>
+                <input id="rad5c" class="answers" type="radio" name="question5" value='c'><label for=rad5c>HTML</label>
+                <input id="rad5d" class="answers" type="radio" name="question5" value='d'><label for=rad5d>TELNET</label>
+            </form>
+            <div class="result" id="result5"></div>
+        </div>
+        <div class="protocol-questions">
+            <div class="question">Which is a common routing protocol used for local and wide area networks?</div>
+            <form class="options">
+                <input id="rad6a" class="answers" type="radio" name="question6" value='a'><label for=rad6a>RIP</label>
+                <input id="rad6b" class="answers" type="radio" name="question6" value='b'><label for=rad6b>ARP</label>
+                <input id="rad6c" class="answers" type="radio" name="question6" value='c'><label for=rad6c>UDP</label>
+                <input id="rad6d" class="answers" type="radio" name="question6" value='d'><label for=rad6d>TCP</label>
+            </form>
+            <div class="result" id="result6"></div>
+        </div>
+    </div>
+    <div id="previous-next">
+        <button id="next-question-button" onclick="displayNext();">Next Question</button>
+        <button id="prev-question-button" onclick="displayPrevious()">Previous Question</button>
+    </div>
+    
+    <script src="js/protocolsQuiz.js"></script>
+</div>
+    
+<!-- Footer -->
+<footer id="footer">  
+  <div class="social_media">
+    <a href="https://www.facebook.com/africanleadershipcollege/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/alueducation/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/african-leadership-unleashed" target="_blank"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p class="ALU"><a href="https://alueducation.com/" target="_blank">African Leadership College</a></p>
+</footer>
+</body>
+</html>

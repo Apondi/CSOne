@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSOne</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+<body>    
+<!-- Navbar -->
+<div class="navbar">
+    <div id="logo-container" class="navcont">
+    <a id="logo" href="index.php"><img alt="logo" src="images/logo.png"></a>
+    </div>
+    <div id="menu" class="navcont">
+        <a href="index.php" class="button"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+           <div class="dropdown">
+               <button class="dropbtn">Modules<i class="fa fa-caret-down" aria-hidden="true" style="padding:0px 5px 0px 5px;"></i></button>
+              <div class="dropdown-content">
+                <a href="networking.html">Introduction to Networking</a>
+                <a href="sofEng.html">Software Engineering</a>
+                <a href="programming.html">Programming 1</a>
+                <a href="math.html" class="active-sublink">Mathematics for Computing</a>
+              </div>
+            </div>
+    </div>
+</div>
+    
+<!-- Header -->
+<header class="header">
+    <div class="mySlides">
+      <img src="images/modules/mathHeader.jpg" alt="welcome">
+      <div class="math context">
+        <h1>Module: Mathematics for Computing</h1> 
+          <p>This is a branch of mathematics dealing with problems that are solved by computers. The analysis of mathematical models includes the study of problem formulation, the selection of models, analysis and processing of input information, the numerical solution of mathematical problems arising during the investigation of the models, analysis of the computed results, and, finally, the problems connected with attaining the results obtained.</p>
+      </div>
+    </div>
+</header>
+
+<!-- Content -->  
+<h2 class="heading">Introduction to Mathematics</h2>
+<div class="content">
+    <p> The definition of the term “computer mathematics” should not be considered fixed, since this field is developing intensively in connection with the ever-increasing uses of computers in new areas. Computer mathematics is often understood to mean the theory of numerical methods and algorithms for solving typical mathematical problems. This interpretation of the term was common in computer mathematics’ early stages, when the use of computers imposed new demands on numerical methods. The major task during this stage involved working out new methods “convenient” for computers. In what follows below, computer mathematics is under-stood in the first, broader sense of the term.</p>
+    <p>Computer mathematics can be divided into three large branches. The first is connected with the use of computers in areas involving scientific and practical activities and can be characterized as the analysis of mathematical models. The second branch deals with working out techniques and algorithms for solving typical mathematical problems arising during the investigation of mathematical models. The third branch deals with the problem of simplifying man-computer interactions, including the theory and practice of programming problems for computers, in particular, automation of programming problems.</p>
+    <iframe width="560" style="margin-left:15px;" height="315" src="https://www.youtube.com/embed/z8HKWUWS-lA" allowfullscreen></iframe>
+    <p>The analysis of mathematical models includes the study of problem formulation, the selection of models, analysis and processing of input information, the numerical solution of mathematical problems arising during the investigation of the models, analysis of the computed results, and, finally, the problems connected with attaining the results obtained. Model selection must be made with the following consideration: The degree of reliability, with which the results of analyzing a model make it possible to study a specific phenomenon (or class of phenomena), must correspond to the accuracy of the input information. In this case, the possibility of obtaining more accurate information generally results in the necessity of improving the assumed model and, in a number of cases, even its complete replacement. For such problems, the processing of input information becomes of vital importance, and this in most cases requires the use of methods of mathematical statistics. Mathematical models have played an important role in the development of natural science. Presently, the use of mathematical models is an essential factor in many areas of man’s activities (including problems of control, planning, forecasting, and so on).</p>
+    <p>The investigation of real phenomena on the basis of constructed mathematical models usually requires the development of numerical methods and the use of electronic computers. Thus, an important place in computer mathematics is occupied by the numerical methods of solving formulated mathematical problems and, first and foremost, by those of solving typical mathematical problems (computer mathematics in the narrow sense of the word).</p>
+    <p>An example of typical applied mathematical problems frequently encountered in applications is that of algebra: of great significance here are the numerical methods of solving systems of linear algebraic equations (in particular, large systems), matrix inversion, finding matrix eigenvalues (both of starting values, which is the bounded eigenvalue problem, and of all the eigenvalues, which is the complete eigenvalue problem). Other examples are numerical methods of differentiation and integration of functions of one or several variables and numerical methods of solving ordinary differential equations (this includes, in particular, the study and comparative analysis of various types of numerical methods, for example, Adams’ method and the Runge-Kutta method). Many studies are devoted to the numerical methods of solving partial differential equations. These concentrate on finding “economical methods,” that is, methods requiring relatively few mathematical operations.</p>
+    <p>A rapidly developing field of computer mathematics is that of the numerical methods of optimization. Optimization consists in the study of the extremal (greatest or least) values of functionals on sets of generally very complex structure. Let us first mention problems in mathematical programming (including linear and dynamic) to which many economic problems are reduced. Minimax problems (and the corresponding numerical methods) are optimization problems; they arise in solving problems in operational research and the theory of games. Especially complex minmaxminmax problems arise in multistage (dynamically developing) games. Here, even mathematical experimentation (playing over the variants of the players’ behavior) is impossible without the use of large computers.</p>
+    <p>The use of computers to solve complex problems, especially problems of large size, has created a major trend in the theory of numerical methods—the study of the stability of methods and algorithms toward various errors (including round-off errors).</p>
+    <p>Inverse problems, for example, the problem of determining the element x from the equation Ax = b with the known information about the operator A and the element/?, are often unstable (incorrectly formulated) problems (small errors in input data have corresponding large errors in x}. Moreover, inverse problems often do not have a solution for all fc; thus, in assigning an approximate value to b, we must keep in mind that a formal solution to the problem may not exist.</p>
+    <p>Unstable problems required a special definition of the concept of approximate solutions and the development of the corresponding methods of finding them. Among the unstable problems is a broad class of problems connected with problems in automating the processing of experimental results.</p>
+    <p>A significant place in most branches of computer mathematics is occupied by problems in optimizing the methods of solving problems. This is particularly significant in problems of large size (for example, a large number of variables). Source <a href="http://encyclopedia2.thefreedictionary.com/Computer+Mathematics">The Free Dictionary</a></p> 
+</div>
+    
+<!-- Footer -->
+<footer id="footer">  
+  <div class="social_media">
+    <a href="https://www.facebook.com/africanleadershipcollege/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/alueducation/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/african-leadership-unleashed" target="_blank"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p class="ALU"><a href="https://alueducation.com/" target="_blank">African Leadership College</a></p>
+</footer>
+</body>
+
+<!-- All images are downloaded from pexels.com -->
+</html>

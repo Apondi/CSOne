@@ -1,0 +1,758 @@
+/*** Reset default settings ***/
+html,body,h1,h2,h3,h4,h5,h6,p,img { background: transparent; border: 0; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+ol,ul { list-style: none; }
+body,p,h2,h3,h4,h5,h6,button {font-family: Arial, Helvetica, sans-serif;}
+h1 {font-family: "Times New Roman", Times, serif;}
+a {text-decoration: none;}
+
+body, html {
+	width: 100%;
+    margin: 0px;
+    height: 100%;
+}
+
+p {
+    line-height: 20px;
+    word-wrap: break-word;
+    padding: 15px;
+}
+
+i {
+    padding: 8px;
+}
+
+img{
+	width: 100%;
+}
+
+#logo img {
+	width: 150px; 
+}
+
+#logo-container {
+    padding: 5px 10px 5px 10px;
+    vertical-align: middle;
+}
+
+.button {
+    background-color: #4c1b1b;
+    padding: 15px 20px 15px 20px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #f6e497; 
+    color: black;
+}
+
+.button:disabled {
+    background-color: #f6e497;
+    color:black;
+}
+
+/************************* Navbar ***********************/
+.navbar {
+    margin: 5px 0px 5px 0px;
+    height: 50px;
+    vertical-align: baseline;
+    width: 100%;
+    margin: 0px;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);
+    padding-top: 2px;
+    z-index: 1000;
+}
+
+.navcont {
+    display: inline-block;
+}
+
+#menu .button {
+    background-color: white; 
+    color: black;
+}
+
+#menu .button:hover {
+    background-color: #f6e497; 
+    color: black;
+    box-shadow: none;
+}
+
+#menu .button.active {
+    background-color: #4c1b1b;
+    color: white;
+} 
+
+.dropbtn {
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    color: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: 0.4s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(76,27,27,0.8);
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f6e497; color: black;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #4c1b1b;
+    color: white;
+}
+
+/****************** Header *******************/
+header {
+    position:relative;
+    vertical-align: middle;
+}
+
+header img {
+    height: 500px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+}
+
+.context {
+    position: absolute;
+    left: 25%;
+    top:200px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    width: 50%;
+}
+
+
+/********************* Content *******************/
+.heading {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(350px, auto);
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.wrapper img {
+    height: 350px;
+}
+
+.wrapper i {
+    font-size: 4em;
+    margin: 5px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+.text-cell {
+    text-align: center;
+    border: 3px solid #ddd;
+}
+
+.text-cell p {
+    margin-bottom: 20px;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+
+.two { 
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.three {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+.four {
+    grid-column: 2 / 2;
+    grid-row: 2;
+}
+.five {
+    grid-column: 1 / 2;
+    grid-row: 3;
+}
+.six {
+    grid-column: 2 / 2;
+    grid-row: 3;
+}
+
+.seven {
+    grid-column: 1 / 2;
+    grid-row: 4;
+}
+
+.eight {
+    grid-column: 2 / 2;
+    grid-row: 4;
+}
+
+/*************************** Modal ************************/
+
+.modal-header {
+    padding-top: 5px;
+    height: 30px;
+}
+
+.modal-header h4 {
+    padding-top: 5px;
+}
+
+.modal {
+    display: none; 
+    position: fixed;  
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;  
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.error {
+    color: #FF0000;
+    font-size: 12px;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #4c1b1b;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+/******************************* Footer ***********************/
+
+#footer {
+    background-color: #4c1b1b;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+#footer a {
+    color: white;
+}
+
+/****************************** Forms ************************/
+form {
+    margin-top: 10px;
+}
+
+form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type=submit] {
+    width: 100%;
+    background-color: #4c1b1b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: #bd8d46;
+}
+
+form div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+form input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/*********************** Networking Page **********************/
+.active-sublink {
+    background-color: #f6e497;
+}
+
+#module-content {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#module-nav{
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+}
+
+#module-material {
+    float: right;
+    text-align: left;
+    height: auto;
+    width: 78%;
+    border-left: 1px solid #ddd;
+}
+
+/** Tab **/
+div.tab {
+    float: left;
+    background-color: #f1f1f1;
+    width: 20%;
+    height: auto;
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 15px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* When a button is active */
+div.tab button.active {
+    background-color: #ccc;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: right;
+    padding: 20px 12px;
+    width: 75%;
+    height: auto;
+    background: #ddd;
+}
+
+.other {
+    display: none;
+}
+
+#module-content p, ul {
+    margin-top: 5px;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+img.content-image {
+    float: right;
+    border: 1px dotted black;
+    margin: 15px 20px 15px 20px;
+    width: 250px;
+    height: 250px;
+}
+
+/************************ Math Page ********************/
+.math {
+    color: black;
+}
+
+/************************ Quiz *************************/
+
+/** Breadcrumb nav **/
+#breadcrumbNav {
+    padding-top: 50px;
+}
+
+ul.breadcrumb {
+    padding: 10px 16px 0px;
+    list-style: none;
+    font-size: 14px;
+}
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #4c1b1b;
+    text-decoration: underline;
+}
+
+div.quiz-header {
+    width:auto;
+    height: auto;
+    background-color: #696969;
+    color: white;
+    vertical-align: center;
+    text-align: left;
+    padding: 50px 100px;
+    background-image: url("blackboard.png");
+    background-repeat: repeat-x;
+    font-size: 20px;
+}
+
+#quiz label {
+    display: block;
+    padding: 5px;
+}
+
+.question {
+	font-weight: 600;
+    margin-top: 20px;
+}
+
+.answers {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+#quiz-container {
+    margin: 20px 100px 20px 100px;
+    border: 2px solid #4c1b1b;
+    padding: 10px;
+}
+
+#results {
+    margin: 20px 0px 20px 0px;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/********************** Protocols Quiz *******************/
+.protocol-questions {
+    text-align: center;
+}
+
+.protocol-questions label {
+    text-align: center;
+    display: inline-block;
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid black;
+    color: #000;
+    width: calc(48% - 8px);
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.protocol-questions input[type=radio] {
+  display: none;
+}
+
+.protocol-questions label:hover {
+    background: #bd8d46;
+    font-weight: 600;
+}
+
+.options input[type="radio"]:checked+label{ 
+    font-weight: bold; 
+    background: #CB8306;
+    color: #FAFAFA;
+} 
+
+#previous-next {
+    margin: 8px 100px 0px 8px;
+}
+
+#previous-next button {
+    float: right;
+    padding: 4px 8px;
+    margin-left: 5px;
+    background: #4c1b1b;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+#previous-next button:hover {
+    background: #bd8d46;
+    color: #000;
+}
+
+#previous-next button:disabled {
+    opacity: 0.5;
+    background: #4c1b1b;
+    color: #00403C;
+    cursor: default;
+}
+
+.result {
+    margin: 10px;
+    padding: 5px;
+}
+
+#questionNumber {
+    margin: 10px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+/***************** Network Access Quiz ********************/
+/* When a button is active */
+.networkAccessTab {
+    display: block;
+    width: auto;
+    margin: 20px 100px 0px 100px;
+}
+
+#quiz-container2 {
+    margin: 0px 100px 20px 100px;
+    border-top: 1px solid #4c1b1b;
+    border-bottom: 1px solid #4c1b1b;
+    border-left: 1px solid #4c1b1b;
+    border-right: 1px solid #4c1b1b;
+    padding: 10px;
+}
+
+div.networkAccessTab button {
+    font-weight: 700;
+    height: 30px;
+    width: 49.8%;
+    cursor: pointer;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+div.networkAccessTab button.active {
+    background-color: #4c1b1b;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.feedback {
+    display: none;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 2px 5px 2px 5px;
+    margin-left: 25px;
+    width: 70%;
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+}
+
+.questionForm {
+    outline: #696969 solid thin;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.questionForm h4 {
+    background-color: #696969;
+    padding: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.questionForm h5 {
+    padding: 5px;
+}
+
+.questionForm label {
+    margin-left: 5px;
+}
+
+input[type="number"] {
+    margin: 5px;
+}
+
+img.quiz-image {
+    width: 50%;
+    max-height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.dropDown {
+    width: 150px;
+    height: 20px;
+    margin-left: 5px;
+    padding: 0px;
+}
+
+input[type="range"] {
+    width: 40%;
+    background-color: red;
+}
+
+/********* Network Access Quiz Part 2 ****/
+#game-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(0px, auto);
+    margin: 10px;
+    grid-gap: 10px;
+    padding: 10px;
+    background-color: #4c1b1b;
+}
+
+.game {
+    width:50%;
+    display: inline;
+}
+
+.game div {
+    border: 1px solid #000;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+	padding: 5px;
+	font-weight: 500;
+}
+
+#game-wrapper .dropzone {
+    background-color:#686868;
+    color: #fff;
+}
+
+#game-wrapper:hover .drag {
+    cursor: move;
+}
+
+#quiz2 {
+	outline: #696969 solid thin;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.checkButton {
+	background-color: #4c1b1b;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    transition-duration: 0.4s;
+	margin: 10px;
+	margin-bottom: 0px;
+}
+
+#res {
+	margin: 0px 10px 20px 10px;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSOne</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+<body>    
+<!-- Navbar -->
+<div class="navbar">
+    <div id="logo-container" class="navcont">
+    <a id="logo" href="index.php"><img alt="logo" src="images/logo.png"></a>
+    </div>
+    <div id="menu" class="navcont">
+        <a href="index.php" class="button"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+           <div class="dropdown">
+               <button class="dropbtn">Modules<i class="fa fa-caret-down" aria-hidden="true" style="padding:0px 5px 0px 5px;"></i></button>
+              <div class="dropdown-content">
+                <a href="networking.html" class="active-sublink">Introduction to Networking</a>
+                <a href="#">Software Engineering</a>
+                <a href="#">Programming 1</a>
+                <a href="#">Mathematics for Computing</a>
+              </div>
+            </div>
+    </div>
+</div>
+    
+<!-- Header -->
+<div id="breadcrumbNav">
+    <ul class="breadcrumb">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="networking.html">Module: Introduction to Networking</a></li>
+      <li>Quiz</li>
+    </ul>
+</div>
+    
+<!-- Content -->
+<div id="module-content">
+    <header>
+         <div class="quiz-header">
+             <h2><i class="fa fa-question-circle" aria-hidden="true"></i>Introduction to Networking Quiz</h2>
+             <p>Answer the questions below and click the submit button to view your results. This being a practice test there is no limit to the number of times you can take this quiz</p>
+         </div>
+    </header> 
+    <!-- Quiz Q&A -->
+    <div id=quiz-container>
+        <div id="quiz"></div>
+        <button id="submit" class="button">Submit Quiz</button>
+        <div id="results"></div> 
+    </div>
+    <script src="js/introQuiz.js"></script>
+</div>
+    
+<!-- Footer -->
+<footer id="footer">  
+  <div class="social_media">
+    <a href="https://www.facebook.com/africanleadershipcollege/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/alueducation/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/african-leadership-unleashed" target="_blank"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p class="ALU"><a href="https://alueducation.com/" target="_blank">African Leadership College</a></p>
+</footer>
+</body>
+</html>

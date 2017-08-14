@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSOne</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+<body>    
+<!-- Navbar -->
+<div class="navbar">
+    <div id="logo-container" class="navcont">
+    <a id="logo" href="index.php"><img alt="logo" src="images/logo.png"></a>
+    </div>
+    <div id="menu" class="navcont">
+        <a href="index.php" class="button"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+           <div class="dropdown">
+               <button class="dropbtn">Modules<i class="fa fa-caret-down" aria-hidden="true" style="padding:0px 5px 0px 5px;"></i></button>
+              <div class="dropdown-content">
+                <a href="networking.html" class="active-sublink">Introduction to Networking</a>
+                <a href="#">Software Engineering</a>
+                <a href="#">Programming 1</a>
+                <a href="#">Mathematics for Computing</a>
+              </div>
+            </div>
+    </div>
+</div>
+    
+<!-- Header -->
+<div id="breadcrumbNav">
+    <ul class="breadcrumb">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="networking.html">Module: Introduction to Networking</a></li>
+      <li>Quiz</li>
+    </ul>
+</div>
+    
+<!-- Content -->
+<div id="module-content">
+    <header>
+         <div class="quiz-header">
+             <h2><i class="fa fa-question-circle" aria-hidden="true"></i>Network Access Quiz</h2>
+             <p>This quiz has two sections: Part 1 and Part 2. Answer the questions in part 1 first and then click the submit button to view your results and feedback before proceeding to part 2. This being a practice test there is no limit to the number of times you can take this quiz</p>
+         </div>
+    </header> 
+    
+    <!-- Tabs -->
+    <div class="networkAccessTab">
+        <button class="tlinks" onclick="quizTab(event, 'quiz1')" id="introduction">Part 1</button>
+        <button class="tlinks" onclick="quizTab(event, 'quiz2')">Part 2</button>
+    </div>
+    
+    <!-- Quiz Q&A -->
+    <div id="quiz-container2">
+        <!-- Part 1 -->
+        <div id="quiz1" class="nAccessContent">  
+        <div class="access-questions">
+            <!-- Question 1-->
+            <form name="qn1" class="questionForm">
+                <h4><i class="fa fa-question-circle" aria-hidden="true"></i>Question 1</h4>
+              <h5>What are the TWO purpose of the Data Link Layer? (CHOOSE TWO)</h5>
+              <label id="answer0"><input type="checkbox" name="question1" value="a"> Check to ensure messages are sent to the right device</label><br>
+              <label id="answer1"><input type="checkbox" name="question1" value="b"> Finding a path on which data can pass from source to destination 
+              </label><br><div class="feedback" id="explanation1"></div>
+              <label id="answer2"><input type="checkbox" name="question1" value="c"> Data framing</label><br>
+              <label id="answer3"><input type="checkbox" name="question1" value="d"> Segmenting data packets into segments for transport through the network</label><br><div class="feedback" id="explanation2"></div>
+            </form>
+            
+            <!-- Question 2-->
+            <form name="qn2" class="questionForm">
+               <h4><i class="fa fa-question-circle" aria-hidden="true"></i>Question 2</h4>
+               <h5>The image below represents a tracert command used to discover trace the network route from one node to another. Refer to the image to complete the sentences by filling out the correct number in the number pickers below.</h5>
+                <img class="quiz-image" src="images/modules/tracert.PNG" alt="tracert"><br>
+               <label id="answer2a"> - There are <input id="qn2a" type="number" name="question2" min="0" max="25">nodes in this network.</label><br>
+                <label id="answer2b"> - There are <input id="qn2b" type="number" name="question2" min="0" max="25"> hops in the tracert command.</label><br>
+                <label id="answer2c"> - From the image, there are a total of <input id="qn2c" type="number" name="question2" min="0" max="25"> switch devices in the network.</label><br>
+                <label id="answer2d"> - There were a total of <input id="qn2d" type="number" name="question2" min="0" max="25"> hops on each device in the network.</label><br>  
+            </form>
+            
+            <!-- Question 3-->
+            <div id="qn3" class="questionForm">
+                <h4><i class="fa fa-question-circle" aria-hidden="true"></i>Question 3</h4>
+                <h5>Select the answer from the drop-down list that fits the description.</h5>
+                <div class="dropDownDiv">
+                    <select id="option1" class="dropDown">
+                      <option>select ...</option>
+                      <option value="DHCP">DHCP</option>
+                      <option value="segments">segments</option>
+                      <option value="packets">packets</option>
+                      <option id="answer3a" value="BOOTP">BOOTP</option>
+                    </select>
+                    are also referred to as datagrams
+                </div>
+                <div class="dropDownDiv">
+                    <select id="option2" class="dropDown">
+                      <option>select ...</option>
+                      <option value="DHCP">DHCP</option>
+                      <option value="segments">segments</option>
+                      <option value="packets">packets</option>
+                      <option value="BOOTP">BOOTP</option>
+                    </select>
+                    are the logic units at the Transport Layer
+                </div>
+                <div class="dropDownDiv">
+                    <select id="option3" class="dropDown">
+                      <option>select ...</option>
+                      <option value="DHCP">DHCP</option>
+                      <option value="segments">segments</option>
+                      <option value="packets">packets</option>
+                      <option value="BOOTP">BOOTP</option>
+                    </select>
+                    assigns an IP address automatically to a given workstation client
+                </div>
+                <div class="dropDownDiv">
+                    <select id="option4" class="dropDown">
+                      <option>select ...</option>
+                      <option value="DHCP">DHCP</option>
+                      <option value="segments">segments</option>
+                      <option value="packets">packets</option>
+                      <option value="BOOTP">BOOTP</option>
+                    </select>
+                    is a computer networking protocol used to deploy an IP address to network devices from a configuration server
+                </div>
+            </div>
+            
+            <!-- Question 4-->
+            <div id="qn4" class="questionForm">
+                <h4><i class="fa fa-question-circle" aria-hidden="true"></i>Question 4</h4>
+                <h5>How many layers are in the Open Systems Interconnection networking model?</h5>
+                <input type="range" id="rangeInput" name="rangeInput" step="1" value="0" max="10" oninput="outputUpdate(value)" >
+                <label id="rangeText">0</label>
+                <label id="output"></label>
+            </div>
+        </div>
+        <button id="submit" class="button">Submit Quiz</button>
+        </div>
+        <div id="part1Score"></div>
+
+        <!-- Part 2 -->
+        <div id="quiz2" class="nAccessContent">
+		<h4><i class="fa fa-question-circle" aria-hidden="true"></i>In the game below, drag and drop the respective descriptions of the conversion stages in data encapsulation into their respective steps</h4>
+        <div class="game" id="game-wrapper">
+			<div id="step1" class="drag one" draggable="true" ondragstart="drag(event)">Data conversion into segments for transport across the network</div>
+			<div id="drop1" class="dropzone two" ondrop="drop(event)" ondragover="allowDrop(event)">Step 1</div>
+			<div id="step3" class="drag three" draggable="true" ondragstart="drag(event)">Data Link layer converts packets into Frames</div>
+			<div id="drop2" class="dropzone four" ondrop="drop(event)" ondragover="allowDrop(event)">Step 2</div>
+			<div id="step2" class="drag five" draggable="true" ondragstart="drag(event)">Network layer converts creates datagrams from the data</div>
+			<div id="drop3" class="dropzone six" ondrop="drop(event)" ondragover="allowDrop(event)">Step 3</div>
+			<div id="step4" class="drag seven" draggable="true" ondragstart="drag(event)"> Frames are converted into bits for transmission over the physical media</div>
+			<div id="drop4" class="dropzone eight" ondrop="drop(event)" ondragover="allowDrop(event)">Step 4</div>
+        </div>   
+		<button onclick="checkAns(event)" class="checkButton">check</button>
+		<div id="res"></div>
+			
+    </div>
+</div>
+</div>
+    
+<script src="js/tabs.js"></script> 
+<script src="js/networkAccessQuiz2.js"></script>
+<script src="js/networkAccessQuiz1.js"></script>
+
+<!-- Footer -->
+<footer id="footer">  
+  <div class="social_media">
+    <a href="https://www.facebook.com/africanleadershipcollege/" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/alueducation/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/african-leadership-unleashed" target="_blank"><i class="fa fa-linkedin"></i></a>
+ </div>
+ <p class="ALU"><a href="https://alueducation.com/" target="_blank">African Leadership College</a></p>
+</footer>
+</body>
+</html>
